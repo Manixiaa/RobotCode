@@ -3,6 +3,7 @@ package frc.robot;
 import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
+import frc.robot.subsystems.Wheels;
 
 public class Robot extends TimedRobot 
 {
@@ -11,6 +12,7 @@ public class Robot extends TimedRobot
   public static RobotContainer m_robotContainer;
 
   //Subsystems
+  
 
   //Navx
   public static AHRS m_ahrs;
@@ -20,6 +22,7 @@ public class Robot extends TimedRobot
   {
 
     //Subsystems
+    Wheels wheels = new Wheels();
     
     //Container
     m_robotContainer = new RobotContainer();
